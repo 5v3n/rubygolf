@@ -21,3 +21,4 @@ pkg
 .bundle
 spec/*.report
 Gemfile.lock
+.rvmrc
