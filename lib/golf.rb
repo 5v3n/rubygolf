@@ -37,5 +37,19 @@ class Golf
     end
     r
   end  
+
+  def self.hole8 n
+   r=[]
+   (1..n).each { |n| r << f(n) }
+   r
+  end
+  def self.f n
+    if n == 0 || n == 1
+      n
+    else
+      f(n-1) + f(n-2)
+    end
+  end
+  
 end
   
