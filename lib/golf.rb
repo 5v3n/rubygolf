@@ -37,6 +37,23 @@ class Golf
     end
     r
   end 
+  
+  def Golf::hole7 a
+    r = []
+    a.each_with_index do |e,i| 
+      if i >= 1
+        s="#{a[i-1]}"
+        if (a[i-1] - a[i]) != -1 || i == a.size-1
+          s << "-#{a[i]}"
+          puts s
+          r << s
+          puts r
+          s ="#{a[i-1]}"
+        end
+      end
+    end  
+    r
+  end
 
   def self.hole8 n
    r=[]
